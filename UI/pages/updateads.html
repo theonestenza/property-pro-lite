@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+                <meta charset="utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="keywords" content="create user account,View a specific property advert,
+                Get all property advertisement offering a specific type of property,
+                Get all property adverts,Delete a property advert,
+                Mark a property as sold so users know it’s no longer available,
+                Update property data,Create a property ad,Login a user
+                ">
+                <meta name="author" content="Theoneste NZAKIZWANIMANA">
+                <meta name="description" content="An easy and reliable online sale and rental service">
+                <title>Property pro lite-An easy and reliable online sale and rental service </title>
+                <link href="../css/index.css" rel="stylesheet">
+                <link rel="shortcut icon" type="image/png" href="../img/logo_main_2.png"/>
+            </head>
+    <body onLoad="fetchParcel()">
+<!--Header of the page-->
+            <header>
+                    <div class="container">
+                            <div id="brand">
+                                    <a href="../index.html"><img src="../img/logo_main_2.png" alt="Slogo" id="logo">
+                                        <label class="top-label">Property pro lite</label></a>
+                                </div>
+                        <nav>
+                            <ul>
+                                <li><a href="../index.html"><b>HOME</b></a></li>
+                                <li><a href="viewads.html"><b>VIEW ADVERTS</b></a></li>
+                                <li><a href="login.html"><b>LOGIN</b></a></li>
+                                <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                                <li><a href="about.html"><b>ABOUT US</b></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+            </header>
+
+        <div class="container">
+<!--User Dashboard header-->
+            <div class="box" id="user-header">
+                <label class="top-label">Update a property advert with property pro lite </label>
+                <div id="user-btn">
+                <a class="button primary" href="createads.html" id="link1">Create property advert </a>
+                <a class="button current" href="updateads.html" id="link5" onClick="trackParcel()">Update property advert</a>
+              </div>
+            </div>
+
+<!--User content is displayed here-->
+        <section id="user-content">
+          <div class="block">
+            <div class="form-3">
+                <form class="box" onSubmit="return false">
+                    <label>Please,enter the user id*</label>
+                    <br />
+                    <input type="text" value="354654235" class="full-width" id="from" required><br />
+                    <label>Please tell us the property owner* </label>
+                    <br />
+                    <input type="text" value="Theoneste NZAKIZWANIMANA" class="full-width" id="destination" required><br />
+					 <label>Please tell us the property status* </label>
+                     <label>  
+                     <br>
+                     Rent</label>
+                     <label>
+                     <input type="checkbox" name="checkbox2" value="checkbox" checked>
+                     Sale</label>
+                     <label>
+                     <input type="checkbox" name="checkbox" value="checkbox">
+                     <input type="checkbox" name="checkbox3" value="checkbox">
+                     Both Rent and Sale</label>
+                    <br />
+                    <label>Upload property images* </label>
+                    <br />
+                    <input type="file" >
+                    <input type="file" >
+                    <input type="file" >
+                    <br />
+                    <label>Please tell us the property price* </label>
+                    <br />
+                    <input type="text" value="1,000,000Rwf" class="full-width" id="weight"><br />
+					 <label>Please,enter the city where property located* </label>
+				    <br />
+                    <input type="text" value=" kigali-Rwanda" class="full-width" id="from" required><br />
+                    <label>Please tell us the property type* </label>
+                    <br />
+                    <input name="text" type="text" class="full-width" id="text" placeholder=" 3 bedroom" required>
+                    <label>This property is created on* </label>
+                    <br />
+					<input type="text" value=" 23 jun 2019" class="full-width" id="destination" required>
+					 <br />
+                    <button type="submit" class="button primary" onClick="createParcel()">Create property advert </button>
+                </form>        
+            </div>
+            
+            </div>
+            <div class="form-3 margin-left ads"></div>
+          </div>
+        </section>
+        <footer class="fixed-footer">
+                <div class="container">
+                    <hr/>
+                    <p>&copy Property pro lite 2019. <a href="#" id="footer-link">Terms</a><a href="#">Privacy</a></p>
+                    
+                </div>
+           </footer>
+    </div>
+    </body>
+</html>
