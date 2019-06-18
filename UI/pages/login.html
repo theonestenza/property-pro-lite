@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="create user account,View a specific property advert,
+        Get all property advertisement offering a specific type of property,
+        Get all property adverts,Delete a property advert,
+        Mark a property as sold so users know it’s no longer available,
+        Update property data,Create a property ad,Login a user
+        ">
+        <meta name="author" content="Theoneste NZAKIZWANIMANA">
+        <meta name="description" content="An easy and reliable online sale and rental service">
+        <title>Property pro lite-An easy and reliable online sale and rental service </title>
+        <link href="../css/index.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="../img/logo_main_2.png"/>
+    </head>
+    <body>
+<!--The header of the page-->
+        <header>
+            <div class="container">
+                    <div id="brand">
+                            <a href="../index.html"><img src="../img/logo_main_2.png" alt="Slogo" id="logo">
+                                <label class="top-label">Property pro lite</label></a>
+                        </div>
+                <nav>
+                    <ul>
+                            <li><a href="../index.html"><b>HOME</b></a></li>
+                            <li><a href="viewads.html"><b>VIEW ADVERTS</b></a></li>
+                            <li><a href="login.html"><b>LOGIN</b></a></li>
+                            <li><a href="contact.html"><b>CONTACT US</b></a></li>
+                            <li><a href="about.html"><b>ABOUT US</b></a></li>   
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!--The login form-->
+      <div class="form">
+        <form onsubmit="return false">
+            <div>
+                <img src="../img/logo_main_2.png" class="icon img-center"/> 
+                <div class="to-center">
+                    <label id="login-title">Sign in to Property pro lite</label>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" placeholder="Email" name="email" class="full-width" id="email" required>
+                <br />
+                <input type="password" placeholder="Password" class="full-width"id="password" required>
+                <div id="a-forget-pswd">
+                    <a href="#">Forget Password?</a>
+                </div>
+                <br />
+                <button type="submit" class="button primary full-width" onclick="login()">Login</button>
+            </div>
+            <!--The error display div-->
+            <div id="err-msg" class="to-center">
+
+            </div>
+            <div class="to-center box">
+                <a href="create-account.html">Create an account</a>
+            </div>
+        </form>
+      </div>
+<!--The footer of the page-->
+        <footer class="fixed-footer">
+             <div class="container">
+                 <hr/>
+                 <p>&copy Property pro lite 2019. <a href="#" id="footer-link">Terms</a><a href="#">Privacy</a></p>
+                 <script src="../js/login.js"></script>
+             </div>
+        </footer>
+   
+    </body>
+</html>
