@@ -15,6 +15,10 @@
         <meta name="description" content="An easy and reliable online sale and rental service">
         <title>Property pro lite-An easy and reliable online sale and rental service </title>
         <link href="../css/index.css" rel="stylesheet">
+        <link href="../css/popup.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/js.js"></script>
+        <title>Property pro lite-An easy and reliable online sale and rental service </title>
+        <link href="../css/index.css" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="../img/logo_main_2.png"/>
     </head>
     <body>
@@ -36,9 +40,19 @@
                 </nav>
             </div>
         </header>
+        <div class="container">
+            <!--User Dashboard header-->
+                        <div class="box" id="user-header">
+                            <label class="top-label">If you want to reset your password do it here </label>
+                            <div id="user-btn">
+                            <a class="button primary" href="createads.html" id="link1">Create property advert </a>
+                            <a class="button primary" href="updateads.html" id="link5" onClick="trackParcel()">Update property advert</a>
+                            <a class="button current" href="pwdreset.html" id="link1">Reset your password </a>
+                        </div>
+                        </div>
 <!--password reset  form-->
-      <div class="form">
-        <form onsubmit="return false">
+      <div class="form" >
+        <form name="RegForm" onsubmit="return reset()">
             <div>
                 <img src="../img/logo_main_2.png" class="icon img-center"/> 
                 <div class="to-center">
@@ -46,13 +60,13 @@
                 </div>
             </div>
             <div class="box">
-                <input type="password" placeholder="Current password" name="password" class="full-width" id="email" required>
+                <input type="password" placeholder="Current password" name="cpassword" class="full-width" id="email" >
                 <br />
-                <input type="password" placeholder=" New password" class="full-width"id="password" required>
+                <input type="password" placeholder=" New password" name="npassword" class="full-width" id="password" >
                 <br>
-                <input type="password" placeholder=" Comfirm password" class="full-width"id="password" required>
+                <input type="password" placeholder=" Comfirm password" name="copassword" class="full-width" id="password" >
                 <br />
-                <button type="submit" class="button primary full-width" onclick="login()">Change</button>
+                <button type="submit" class="button primary full-width">Change</button>
             </div>
             <!--The error display div-->
             <div id="err-msg" class="to-center">
